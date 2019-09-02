@@ -87,6 +87,13 @@ public class Servlet_Solicitud extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
+	
+	private String descripcionUber()
+	{
+		String nombre = "Juan";
+		return "Toyota,PLaca:123hhh"+nombre;
+	}
+	
     private String solicitudServicio(java.lang.String nombreCliente, java.lang.String ubicacion, java.lang.String destino) {
         // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
         // If the calling of port operations may lead to race condition some synchronization is required.
